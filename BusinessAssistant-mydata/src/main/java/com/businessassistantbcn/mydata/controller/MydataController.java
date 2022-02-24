@@ -40,7 +40,7 @@ public class MydataController {
     	@ApiResponse(code = 200, message = "OK"),
     	@ApiResponse(code = 404, message = "Not Found"),
     	@ApiResponse(code = 503, message = "Service Unavailable")})
-    public Mono<?> mysearchesByUseruu_id(
+    public Mono<?> getAllSearchesByUser(
         @ApiParam(value = "Offset", name= "Offset")
         @RequestParam(required = false) String offset,
         @ApiParam(value = "Limit", name= "Limit")
